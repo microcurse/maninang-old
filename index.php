@@ -8,20 +8,14 @@
 		<div class="name">Marc Maninang</div>
 	</header>
 	<div class="main">
- 		<h2>Homepage</h2>
- 			<h3>Section 1</h3>
- 			<p>Lorem Khaled Ipsum is a major key to success. The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile. Give thanks to the most high. Find peace, life is like a water fall, you’ve gotta flow. They don’t want us to eat. The first of the month is coming, we have to get money, we have no choice. It cost money to eat and they don’t want you to eat. Hammock talk come soon. Special cloth alert.</p>
-		
-			<p>Special cloth alert. Let’s see what Chef Dee got that they don’t want us to eat. You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. Stay focused. You should never complain, complaining is a weak emotion, you got life, we breathing, we blessed. Surround yourself with angels. Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. The other day the grass was brown, now it’s green because I ain’t give up. Never surrender.</p>
+ 		<h2>Starting off point</h2>
+ 			<p>So I had all this filler "Khaled Ipsum" text in here but I figured I would actually write out the purpose of this site. I'm using a very common blog style layout for this site. It will probably change as I add more functions. I'm getting used to using scalable CSS length units such as em, rem, and vw. I really enjoy using scalable units and it feels really good to use them. I don't quite want to use Bootstrap on this site but I will most likely be playing with some sort of CSS framework. I want to add more customized functions using PHP and Javascript or jQuery. I would want to hand code these myself, so don't let me just plug and play functions!</p>
 			
-			<h3>Section 2</h3>
-			<p><strong>Don’t ever play yourself.</strong> Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. How’s business? Boomin. Fan luv. How’s business? Boomin. Lion! They don’t want us to eat. In life there will be road blocks but we will over come it. Celebrate success right, the only way, apple. You do know, you do know that they don’t want you to have lunch. I’m keeping it real with you, so what you going do is have lunch.</p>
+			<p>Here's a recent site I did for one of my clients.</p>
+			<a href="http://byodcomp.com/"><img src="css/images/byod-comp.png" alt="BYOD Computer Services">BYOD Computer Services</a>
 
-			<p>Bless up. You do know, you do know that they don’t want you to have lunch. I’m keeping it real with you, so what you going do is have lunch. Find peace, life is like a water fall, you’ve gotta flow. Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. Give thanks to the most high. Special cloth alert. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion!</p>
-			
-			<p>Check out this site I built!</p>
-			<a href="http://maninang.com/byod">BYOD Computer Services</a>
-			
+		<h3>PHP Form</h3>
+			<p>This form isn't connected to a database just yet. I'm still currently working on that right now.</p>
 			<div class="form-container">
 				<img src="/css/images/charmander.png" alt="Charmander" width="150px">
 				<form action="submit.php" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
