@@ -44,10 +44,10 @@ header{
 }
 body{
 	margin: 0 auto;
-	line-height:1.8;
+	line-height:120%;
 	font-family:"Lato", sans-serif;
 	color:#555;
-	font-size:18px;
+	text-align:justify;
 }
 .main{
 	margin:0 auto;
@@ -60,8 +60,10 @@ body{
 .form-container{
 	margin:2em auto;
 	background-color:#eaeaea;
-	padding:1em;
-	text-align: center;
+	padding:2em 8em;
+}
+#form-img{
+	text-align:center;
 }
 footer{
 	margin:0 auto;
@@ -71,6 +73,9 @@ footer{
 footer h3{
 	color:#999;
 	margin:0 15%;
+}
+input, textarea{
+	width:100%;
 }
 input[type=submit]{
 	background-color:#E64A19;
