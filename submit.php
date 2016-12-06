@@ -1,21 +1,16 @@
 <?php
+	if (isset($_POST["submit"])) {
+		$name = $_POST["name"];
+		$email = $_POST["email"];
+		$phone = $_POST["phone"];
+		$message= $_POST["message"];
 
-$name = $_POST["name"];
-$email = $_POST["email"];
-$pokemon = $_POST["pokemon"];
-$level = $_POST["level"];
-$explain = $_POST["explain"];
+		$from = 'Portfolio Contact Form'
+		$to = 'example@domain.com'
+		$subject = 'Message from Portfolio Contact Form'
+
+		$body = 'From: $name\n Email: $email\n $phone\n $message';
+		$result = '<div class="alert alert-success">Thank you! I will be in touch!</div>';
+	}
 
 ?>
-<html>
-	<body>
-		Welcome Pokemon trainer <strong><?php echo $name; ?></strong>!<br>
-		Your email address is <strong><?php echo $email; ?></strong><br>
-		Your starter Pokemon was <strong><?php echo $pokemon; ?></strong><br>
-		You chose <strong><?php echo $pokemon; ?></strong> because <strong><?php echo $explain ?></strong><br>
-		Your <strong><?php echo $pokemon ?></strong> is now level <strong><?php echo $level; ?></strong><br>
-		Congratulations trainer!
-
-		<!--<img src="" alt="">-->
-	</body>
-</html>

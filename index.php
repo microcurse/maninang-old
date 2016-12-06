@@ -1,53 +1,80 @@
-<!--Header-->
-<?php include_once('templates/header.php'); ?>
-	
-<body> 
-	<header id="header">
-		<img id="logo" src="css/images/mnm.png" alt="Logo" />
-		<h1 class="header-text">Welcome to my quiet paradise.</h1>
-		<div class="name">Marc Maninang</div>
-	</header>
+<?php
+	if (isset($_POST["submit"])) {
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$message = $_POST['message'];
+		$from = 'Contact Form';
+		$to = 'example@domain.com';
+		$subject = 'Message from Portfolio Contact Form ';
+
+		$body ="From: $name\n E-Mail: $email\n Message:\n $message";
+		// Check if name has been entered
+		if (!$_POST['name']) {
+			$errName = 'Please enter your name';
+		}
+
+		// Check if email has been entered and is valid
+		if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+			$errEmail = 'Please enter a valid email address';
+		}
+
+		//Check if message has been entered
+		if (!$_POST['message']) {
+			$errMessage = 'Please enter your message';
+		}
+
+// If there are no errors, send the email
+if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
+	if (mail ($to, $subject, $body, $from)) {
+		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+	} else {
+		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
+	}
+}
+	}
+?>
+<?php include_once('templates/header.php');?>
+<body>
 	<div class="main">
- 		<h2>Starting off point</h2>
- 			<p>So I had all this filler "Khaled Ipsum" text in here but I figured I would actually write out the purpose of this site. I'm using a very common blog style layout for this site. It will probably change as I add more functions. I'm getting used to using scalable CSS length units such as em, rem, and vw. I really enjoy scalable units and it feels really good to use them. I don't quite want to use Bootstrap on this site but I will most likely be playing with some sort of CSS framework. I want to add more customized functions using PHP and Javascript or jQuery. I would want to hand code these myself, so don't let me just plug and play functions!</p>
-			
-			<p>Here's a recent site I did for one of my clients.</p>
+ 		<h2>Let's go!</h2>
+ 			<p>This is just a custom built site using simple HTML and CSS. I'm using a very common blog style layout for this site. It will probably change as I add more functions. I'm getting used to using scalable CSS length units such as em, rem, and vw. I'm really enjoying scalable units and it feels really good to use them. I don't quite want to use Bootstrap on this site but I will most likely be playing with some sort of CSS framework. I want to add more customized functions using PHP and Javascript or jQuery. I would want to hand code these myself, so don't let me just plug and play functions!</p>
+
+		<h2>Projects</h2>
+			<p>Here are some sites that I've worked on</p>
 			<div class="list-of-work">
 				<a href="http://byodcomp.com/"><figure><img src="css/images/byod-comp.png" alt="BYOD Computer Services"><figcaption>BYOD Computer Services</a></figcaption></figure>
 			</div>
 
-		<h3>PHP Form</h3>
-			<p>This form isn't connected to a database just yet. Still a WIP.</p>
 			<div class="form-container">
-				<div id="form-img">
-					<img src="css/images/charmander.png" alt="Charmander" width="200px">
-				</div>
-				<form action="submit.php" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-					<div class="form-fields">
-						<label>Name:</label> 
-						<input type="text" name="name">
+				<h2>Contact Me</h2>
+					<p style="text-align:center;">Fill out the form if you like what I've got to offer!</p>
+				<form id="contact-form" class="form" action="index.php" method="post" role="form">
+					<div class="form-group">
+						<label class="form-label" for="name">Name</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="Name" tabindex="1" required>
 					</div>
-					<div class="form-fields">
-						<label>E-mail:</label> 
-						<input type="text" name="email">
+					<div class="form-group">
+						<label class="form-label" for="email">Email</label>
+						<input type="email" class="form-control" id="email" name="email" placeholder="Email" tabindex="1" required>
 					</div>
-					<div class="form-fields">
-						<label>Who's your starting Pokemon?:</label> 
-						<input type="text" name="pokemon">
+					<div class="form-group">
+						<label class="form-label" for="phone">Phone</label>
+						<input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" tabindex="1" required>
 					</div>
-					<div class="form-fields">
-						<label>Explain why:</label> 
-						<textarea name="explain" rows="4" cols="40"></textarea>
+					<div class="form-group">
+						<label class="form-label" for="message">Message</label>
+						<textarea name="message" rows="4" cols="40" class="form-control" placeholder="Message" tabindex="4" required></textarea>
 					</div>
-					<div class="form-fields">
-						<label>What level is it now?:</label>
-						<input type="number" name="level">
+					<div class="form-group">
+							<?php echo $result; ?>
 					</div>
-					<input type="submit">
+					<div class="text-center">
+						<button type="submit" class="btn btn-start-order">Send Message</button>
+					</div>
 				</form>
 			</div>
- 	</div> <!--End Container-->
+ 	</div> <!-- End Main -->
  	<footer>
-		<h3>Marc Maninang</h3>
+		<p>Marc Maninang</p>
 	</footer>
  </body>

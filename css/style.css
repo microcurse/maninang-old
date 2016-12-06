@@ -1,8 +1,3 @@
-/**
-		Stylesheet
-		By Marc
-**/
-
 @charset "UTF-8";
 
 h1, h2, h3{
@@ -23,15 +18,18 @@ a:hover{
 a:active, a:focus{
 	color:#BC5E41;
 }
-
+p{
+	font-size:1.2em;
+	line-height:1.8em;
+}
 header{
 	background-color:#000;
-	background-image:url("images/poke-bg.jpg");
+	background-image:url("images/banner.jpg");
 	background-position: 50% 30%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	line-height:1.2;
-    padding: 1vw 2em 20vw;
+  	padding: 10vw 2em 10vw;
 	text-align: center;
 }
 .header-text{
@@ -59,20 +57,79 @@ body{
 }
 .form-container{
 	margin:2em auto;
-	background-color:#eaeaea;
 	padding:2em 8em;
+	background:#f0f0f1;
+	border-radius:5% 40% 5%;
 }
-#form-img{
+.form-container h2{
+	margin-bottom:1vw;
 	text-align:center;
+}
+/* This removes the blue outline of input fields when focused */
+textarea:focus, input:focus{
+    outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #f0f0f1 inset;
+}
+textarea{
+	resize:none;
+	font-family:"Lato", sans-serif;
+}
+.form-label{
+	color:#5e9bfc;
+	margin:0;
+	font-size:1em;
+	display: block;
+	opacity: 1;
+	-webkit-transition: .333s ease top, .333s ease opacity;
+	transition: .333s ease top, .333s ease opacity;
+}
+.form-control {
+	border-radius: 0;
+	border-color: #ccc;
+		border-width: 0 0 2px 0;
+		border-style: none none solid none;
+		box-shadow: none;
+	background-color:#f0f0f1;
+}
+.form-control:focus{
+	box-shadow:none;
+	border-color:#5e9bfc;
+}
+.js-hide-label{
+	opacity:0;
+}
+.js-unhighlight-label{
+	color:#999;
+}
+.btn-start-order{
+	background: 0 0 #f0f0f1;
+		border:2px solid #3d3f45;
+		border-radius: 3px;
+		color:#3d3f45;
+		line-height: inherit;
+		font-size: 16px;
+		margin: 30px 0;
+		padding: 10px 50px;
+		text-transform: uppercase;
+		transition: all 0.25s ease 0s;
+}
+.btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
+	border-color: #5e9bfc;
+	color: #5e9bfc;
 }
 footer{
 	margin:0 auto;
 	padding:1em;
-	background-color:#555;
+	background-color:#212121;
 }
-footer h3{
+footer p{
 	color:#999;
-	margin:0 15%;
+	margin:0 auto;
 }
 input, textarea{
 	width:100%;
