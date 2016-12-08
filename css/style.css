@@ -69,12 +69,13 @@ body{
 textarea:focus, input:focus{
     outline: none;
 }
+/*
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px #f0f0f1 inset;
-}
+}*/
 textarea{
 	resize:none;
 	font-family:"Lato", sans-serif;
@@ -131,7 +132,7 @@ footer p{
 	color:#999;
 	margin:0 auto;
 }
-input, textarea{
+/*input, textarea{
 	width:100%;
 }
 input[type=submit]{
@@ -151,3 +152,4 @@ input[type=submit]:active, input[type=submit]:focus{
 	background-color:#B83A12;
 	cursor:pointer;
 }
+*/
