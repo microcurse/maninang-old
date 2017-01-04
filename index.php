@@ -1,38 +1,3 @@
-<?php
-	if (isset($_POST["submit"])) {
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$message = $_POST['message'];
-		$from = 'Contact Form';
-		$to = 'example@domain.com';
-		$subject = 'Message from Portfolio Contact Form ';
-
-		$body ="From: $name\n E-Mail: $email\n Message:\n $message";
-		// Check if name has been entered
-		if (!$_POST['name']) {
-			$errName = 'Please enter your name';
-		}
-
-		// Check if email has been entered and is valid
-		if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-			$errEmail = 'Please enter a valid email address';
-		}
-
-		//Check if message has been entered
-		if (!$_POST['message']) {
-			$errMessage = 'Please enter your message';
-		}
-
-// If there are no errors, send the email
-if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
-	if (mail ($to, $subject, $body, $from)) {
-		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
-	} else {
-		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
-	}
-}
-	}
-?>
 <?php include_once('templates/header.php');?>
 <body>
 	<div class="main">
@@ -47,7 +12,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 
 			<div class="form-container">
 				<h2>Contact Me</h2>
-					<p style="text-align:center;">Fill out the form if you like what I've got to offer!</p>
+					<p style="text-align:center;">Fill out the form if you like filling stuff out!</p>
 				<form id="contact-form" class="form" action="index.php" method="post" role="form">
 					<div class="form-group">
 						<label class="form-label" for="name">Name</label>
@@ -65,11 +30,11 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 						<label class="form-label" for="message">Message</label>
 						<textarea name="message" rows="4" cols="40" class="form-control" placeholder="Message" tabindex="4" required></textarea>
 					</div>
-					<div class="form-group">
-							<?php echo $result; ?>
-					</div>
 					<div class="text-center">
-						<button type="submit" class="btn btn-start-order">Send Message</button>
+						<input id="submit" name="submit" type="submit" value="Send Message" class="btn btn-start-order" action="submit.php">
+					</div>
+					<div class="form-group">
+						<?php echo $result; ?>
 					</div>
 				</form>
 			</div>
