@@ -29,3 +29,10 @@
     <h1 class="header-text">Project Start</h1>
     <div class="name">Marc Maninang</div>
 </header>
+<body>
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Portfolio</a>
+  <a href="#">Tools</a>
+  <a href="#">Contact</a>
+</nav>

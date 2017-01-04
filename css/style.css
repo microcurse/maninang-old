@@ -37,6 +37,16 @@ header{
 	color:#fff;
 	font-weight:100;
 }
+nav{
+	display: inline-block;
+	width:100%;
+	padding:1em;
+	text-align:center;
+}
+nav a{
+	padding:5px 10px; 
+}
+
 .name{
 	color:#fff;
 }
