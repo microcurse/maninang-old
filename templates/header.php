@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <head>
    <meta http-equiv="content-type" charset="utf-8">
+   <?php include('templates/submit.php');?>
    <title>PROJECT START</title>
 
    <!--Stylesheets and Javascripts-->

@@ -31,7 +31,7 @@
 						<textarea name="message" rows="4" cols="40" class="form-control" placeholder="Message" tabindex="4" required></textarea>
 					</div>
 					<div class="text-center">
-						<input id="submit" name="submit" type="submit" value="Send Message" class="btn btn-start-order" action="submit.php">
+						<input id="submit" name="submit" type="submit" value="Send Message" class="btn btn-start-order" action="submit.php" post="submit">
 					</div>
 					<div class="form-group">
 							<?php echo $result; ?>
