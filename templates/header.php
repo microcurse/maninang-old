@@ -31,8 +31,8 @@
 </header>
 <body>
 <nav>
-  <a href="#">Home</a>
+  <a href="/maninang">Home</a>
   <a href="#">Portfolio</a>
-  <a href="#">Tools</a>
+  <a href="./tools.php">Tools</a>
   <a href="#">Contact</a>
 </nav>
