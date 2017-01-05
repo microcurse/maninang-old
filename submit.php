@@ -1,33 +1,4 @@
 <?php
-<<<<<<< HEAD
-if (isset($_POST["submit"])) {
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$message = $_POST['message'];
-	$from = 'Contact Form';
-	$to = 'example@domain.com';
-	$subject = 'Message from Portfolio Contact Form ';
-	$result = '';
-
-	$body ="From: $name\n E-Mail: $email\n Message:\n $message";
-	// Check if name has been entered
-	if (!$_POST['name']) {
-		$errName = 'Please enter your name';
-	}
-
-	// Check if email has been entered and is valid
-	if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-		$errEmail = 'Please enter a valid email address';
-	}
-
-	//Check if message has been entered
-	if (!$_POST['message']) {
-		$errMessage = 'Please enter your message';
-	}
-
-// If there are no errors, send the email
-	if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
-=======
 	$result = '';
 	$errName = '';
 	$errEmail = '';
@@ -59,7 +30,6 @@ if (isset($_POST["submit"])) {
 
 // If there are no errors, send the email
 	if (!$errName && !$errEmail && !$errMessage) {
->>>>>>> origin/master
 		if (mail ($to, $subject, $body, $from)) {
 			$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
 		} else {
