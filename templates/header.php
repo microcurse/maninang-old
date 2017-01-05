@@ -4,8 +4,13 @@
 <!DOCTYPE html>
 <head>
    <meta http-equiv="content-type" charset="utf-8">
+<<<<<<< HEAD
    <?php include('templates/submit.php');?>
    <title>PROJECT START</title>
+=======
+   <?php include('./submit.php');?>
+   <title>Project Start</title>
+>>>>>>> origin/master
 
    <!--Stylesheets and Javascripts-->
    <link rel="stylesheet"type="text/css" href="./css/bootstrap.min.css">
@@ -26,6 +31,13 @@
 </head>
 <header id="header">
     <img id="logo" src="css/images/mnm.png" alt="Logo" />
-    <h1 class="header-text">Welcome to my quiet paradise.</h1>
+    <h1 class="header-text">Project Start</h1>
     <div class="name">Marc Maninang</div>
 </header>
+<body>
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Portfolio</a>
+  <a href="#">Tools</a>
+  <a href="#">Contact</a>
+</nav>

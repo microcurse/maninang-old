@@ -1,5 +1,5 @@
 <?php include_once('templates/header.php');?>
-<body>
+
 	<div class="main">
  		<h2>Let's go!</h2>
  			<p>This is just a custom built site using simple HTML and CSS. I'm using a very common blog style layout for this site. It will probably change as I add more functions. I'm getting used to using scalable CSS length units such as em, rem, and vw. I'm really enjoying scalable units and it feels really good to use them. I don't quite want to use Bootstrap on this site but I will most likely be playing with some sort of CSS framework. I want to add more customized functions using PHP and Javascript or jQuery. I would want to hand code these myself, so don't let me just plug and play functions!</p>
@@ -12,7 +12,7 @@
 
 			<div class="form-container">
 				<h2>Contact Me</h2>
-					<p style="text-align:center;">Fill out the form if you like what I've got to offer!</p>
+					<p style="text-align:center;">Fill out the form if you like filling stuff out!</p>
 				<form id="contact-form" class="form" action="index.php" method="post" role="form">
 					<div class="form-group">
 						<label class="form-label" for="name">Name</label>
@@ -31,10 +31,17 @@
 						<textarea name="message" rows="4" cols="40" class="form-control" placeholder="Message" tabindex="4" required></textarea>
 					</div>
 					<div class="text-center">
+<<<<<<< HEAD
 						<input id="submit" name="submit" type="submit" value="Send Message" class="btn btn-start-order" action="submit.php" post="submit">
 					</div>
 					<div class="form-group">
 							<?php echo $result; ?>
+=======
+						<input id="submit" name="submit" type="submit" value="Send Message" class="btn btn-start-order" action="submit.php">
+					</div>
+					<div class="form-group">
+						<?php echo $result; ?>
+>>>>>>> origin/master
 					</div>
 				</form>
 			</div>

@@ -37,6 +37,16 @@ header{
 	color:#fff;
 	font-weight:100;
 }
+nav{
+	display: inline-block;
+	width:100%;
+	padding:1em;
+	text-align:center;
+}
+nav a{
+	padding:5px 10px; 
+}
+
 .name{
 	color:#fff;
 }
@@ -69,6 +79,16 @@ body{
 textarea:focus, input:focus{
     outline: none;
 }
+<<<<<<< HEAD
+=======
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #f0f0f1 inset;
+}
+>>>>>>> origin/master
 textarea{
 	resize:none;
 	font-family:"Lato", sans-serif;
