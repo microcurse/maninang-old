@@ -39,7 +39,5 @@
 				</form>
 			</div>
  	</div> <!-- End Main -->
- 	<footer>
-		<p>Marc Maninang</p>
-	</footer>
+ 	<?php include_once('templates/footer.php');?>
  </body>
