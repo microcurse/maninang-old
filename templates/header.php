@@ -24,12 +24,12 @@
    <!-- Form Style -->
    <script type="text/javascript" src="css/js/form-style.js"></script>
 </head>
+<body>
 <header id="header">
     <img id="logo" src="css/images/mnm.png" alt="Logo" />
     <h1 class="header-text">Project Start</h1>
     <div class="name">Marc Maninang</div>
 </header>
-<body>
 <nav>
   <a href="/maninang">Home</a>
   <a href="#">Portfolio</a>
