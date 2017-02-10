@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+*{
+	margin:0;
+	padding:0;
+}
 h1, h2, h3{
 	margin-top: 1em;
 	padding-top: 1em;
@@ -144,6 +148,56 @@ textarea{
 .btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
 	border-color: #E64A19;
 	color: #E64A19;
+}
+/*Calculator CSS*/
+.calculator-container{
+	max-width: 350px;
+    margin: 0 auto;
+}
+#calculator{
+	background:#7E57C2;
+	margin:0;
+	padding:1em 2em;
+	width:420px;
+	border-radius:3px;
+}
+.top{
+
+}
+#calculator button.clear{
+	background-color:#FF5722;
+	color:#fff;
+}
+.screen{
+	width:260px;
+	height:50px;
+	background:#fff;
+	float:right;
+	margin: 5px 9px 5px 5px;
+	box-shadow:0px 3px 10px 0px #545454;
+	border-radius:2px;
+}
+.calc-buttons{
+	width:400px;
+}
+#calculator button{
+	float:left;
+	margin:5px;
+	font-family:Roboto, arial, sans-serif;
+	font-weight:700;
+	color:#5d5d5d;
+	width:80px;
+	height:50px;
+	background-color:#ecf0f1;
+	border-radius:2px;
+	box-shadow:0px 3px 10px 0px #545454;
+	border:none;
+}
+#calculator button.equals{
+	background-color:#00BCD4;
+}
+#calculator button.operators{
+	background-color:#B0BEC5;
 }
 footer{
 	margin:0 auto;
