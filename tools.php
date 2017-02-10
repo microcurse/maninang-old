@@ -1,4 +1,5 @@
 <?php include_once('templates/header.php');?>
-<div class="main">
+<main>
 	<h2>Tools</h2>
-</div>
+</main>
+<?php include_once('templates/footer.php');?>
