@@ -149,6 +149,29 @@ textarea{
 	border-color: #E64A19;
 	color: #E64A19;
 }
+/*Material Button Ripple Effect*/
+.ripple{
+	overflow:hidden;
+}
+.ripple-effect{
+	position:absolute;
+	border-radius:50%;
+	width:50px;
+	height:50px;
+	background: #fff;
+	animation:ripple-animation 2s;
+}
+@keyframes ripple-animation{
+	from{
+		transform:scale(1);
+		opacity:0.4;
+	}
+	to{
+		transform:scale(100);
+		opacity:0;
+	}
+}
+
 /*Calculator CSS*/
 .calculator-container{
 	max-width: 350px;
@@ -181,6 +204,8 @@ textarea{
 	width:400px;
 }
 #calculator button{
+	outline: none;
+	position: relative;
 	float:left;
 	margin:5px;
 	font-family:Roboto, arial, sans-serif;

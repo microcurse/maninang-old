@@ -4,11 +4,12 @@
 <!DOCTYPE html>
 <head>
    <meta http-equiv="content-type" charset="utf-8">
-   <?php include('./submit.php');?>
    <title>Project Start</title>
 
    <!--Stylesheets and Javascripts-->
-   <link rel="stylesheet"type="text/css" href="./css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script type="text/javascript" src="./css/js/scripts.js"></script>
 
    <!-- Call regular Stylesheet AFTER to overwrite bootstrap CSS -->
    <link rel="stylesheet" type="text/css" href="./css/style.css">
@@ -22,7 +23,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
    <!-- Form Style -->
-   <script type="text/javascript" src="css/js/form-style.js"></script>
+   <script type="text/javascript" src="./css/js/form-style.js"></script>
 </head>
 <body>
 <header id="header">

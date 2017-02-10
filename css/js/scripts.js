@@ -1,33 +1,36 @@
 /*Material Button ripple*/
-(function(window,$){
-	$(function(){
+(function(window, $) {
 
-		$(.'ripple').on('click', function (event){
-			event.preventDefault();
+  $(function() {
 
-			var $div = $('<div/>'),
-				btnOffset = $(this).offset(),
-				xPos = event.PageX - btnOffset.left,
-				Ypos = event.PageY - btnOffset.top,
+    $('.ripple').on('click', function(event) {
+      event.preventDefault();
 
-			$div.addClass('ripple-effect');
-			var $ripple = $(".ripple-effect");
+      var $div = $('<div/>'),
+        btnOffset = $(this).offset(),
+        xPos = event.pageX - btnOffset.left,
+        yPos = event.pageY - btnOffset.top;
 
-			$ripple.css("height", $(this).height());
-			$ripple.css("width", $(this).height());
-			$div
-				.css({
-					top: yPos - ($ripple.height()/2),
-					left: xPos - ($ripple.width()/2),
-					background: $(this).data("ripple-color")
-				})
-			.appendTo($(this));
+      $div.addClass('ripple-effect');
+      var $ripple = $(".ripple-effect");
 
-		window.setTimeout(function(){
-			$div.remove();
-		}, 2000);
-		});
-	});
-})(window,jQuery);
+      $ripple.css("height", $(this).height());
+      $ripple.css("width", $(this).height());
+      $div
+        .css({
+          top: yPos - ($ripple.height() / 2),
+          left: xPos - ($ripple.width() / 2),
+          background: $(this).data("ripple-color")
+        })
+        .appendTo($(this));
+
+      window.setTimeout(function() {
+        $div.remove();
+      }, 2000);
+    });
+
+  });
+
+})(window, jQuery);
 
 /* Calculator */
