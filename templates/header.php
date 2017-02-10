@@ -6,6 +6,7 @@
    <meta http-equiv="content-type" charset="utf-8">
    <title>Project Start</title>
 
+    <?php include('submit.php');?>
    <!--Stylesheets and Javascripts-->
    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -32,7 +33,7 @@
     <div class="name">Marc Maninang</div>
 </header>
 <nav>
-  <a href="/maninang">Home</a>
+  <a href="http://maninang.com">Home</a>
   <a href="#">Portfolio</a>
   <a href="./tools.php">Tools</a>
   <a href="#">Contact</a>
