@@ -28,9 +28,12 @@
         $div.remove();
       }, 2000);
     });
-
   });
 
 })(window, jQuery);
+/* Menu Drop down */
+(function(window, $){
 
+
+})
 /* Calculator */

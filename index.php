@@ -2,7 +2,10 @@
 
 	<main>
  		<h2>Let's go!</h2>
- 			<p>This is just a custom built site using simple HTML and CSS. I'm using a very common blog style layout for this site. It will probably change as I add more functions. I'm getting used to using scalable CSS length units such as em, rem, and vw. I'm really enjoying scalable units and it feels really good to use them. I don't quite want to use Bootstrap on this site but I will most likely be playing with some sort of CSS framework. I want to add more customized functions using PHP and Javascript or jQuery. I would want to hand code these myself, so don't let me just plug and play functions!</p>
+ 			<p>This is just a custom built site using simple HTML and CSS. I'm using a very common blog style layout for this site. It will probably change as I add more functions. I'm getting used to using scalable CSS length units such as em, rem, and vw. I'm really enjoying scalable units and it feels really good to use them. I don't quite want to use Bootstrap on this site but I will most likely be playing with some sort of CSS framework. I want to add more customized functions using PHP and jQuery. I would want to hand code these myself, so don't let me just plug and play functions!</p>
+ 
+		<p><strong>Update: 2/23/2017</strong> <br />
+			I integrated bootstrap..</p>
 
 		<h2>Projects</h2>
 			<p>Here are some sites that I've worked on</p>

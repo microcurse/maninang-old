@@ -28,6 +28,9 @@ p{
 	font-size:1.2em;
 	line-height:1.8em;
 }
+img{
+	max-width:100%;
+}
 header{
 	background-color:#000;
 	background-image:url("images/banner.jpg");
@@ -46,9 +49,28 @@ header{
 nav{
 	display: inline-block;
 	width:100%;
-	padding:1em;
+	min-height:45px;
+	padding:1em 2em;
 	text-align:center;
 	background-color: #212121;
+	overflow: hidden;
+}
+.nav-btn{
+	display:none;
+	font-size:24px;
+	color:#ccc;
+}
+@media screen and (max-width:425px) {
+	nav{
+		display:block;
+	}
+	.nav-btn{
+		display:block !important;
+		float:left;
+	}
+	nav a{
+		display:none;
+	}
 }
 nav a{
 	padding: .6em 3em;
@@ -73,18 +95,21 @@ body{
 }
 main{
 	margin:0 auto;
-	max-width: 50em;
-	padding:1em;
+	width: 60em;
+	padding:2em;
+	max-width:100%;
 }
 .list-of-work{
 	text-align:center;
 }
+/* Contact Form */
 .form-container{
 	margin:2em auto;
 	padding: 0 2em;
 	background: #ecf0f1;
 	border-radius:5px;
 	width: 400px;
+	max-width:100%;
 }
 .form-container h2{
 	margin-bottom:1vw;
@@ -149,6 +174,7 @@ textarea{
 	border-color: #E64A19;
 	color: #E64A19;
 }
+
 /*Material Button Ripple Effect*/
 .ripple{
 	overflow:hidden;
