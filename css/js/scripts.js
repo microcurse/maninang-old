@@ -1,4 +1,4 @@
-/*Material Button ripple*/
+/*Material Button ripple
 (function(window, $) {
 
   $(function() {
@@ -30,10 +30,13 @@
     });
   });
 
-})(window, jQuery);
+})(window, jQuery);*/
 /* Menu Drop down */
 (function(window, $){
 
 
 })
-/* Calculator */
+/* Calculator Functionality */
+function(){
+  
+}
